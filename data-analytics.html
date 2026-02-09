@@ -471,6 +471,67 @@
             font-size: 14px;
         }
         
+                
+        /* Footer */
+        footer {
+            background: #0a1628;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 40px 30px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #3b82f6;
+        }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
         /* Responsive */
         @media (max-width: 1024px) {
             .services-grid {
@@ -597,6 +658,7 @@
                     </div>
                 </li>
                 <li><a href="index.html#process">Process</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -729,46 +791,6 @@
         </div>
     </section>
 
-    <!-- Our Five-Step Flow System Section -->
-    <section class="section section-white">
-        <div class="section-header">
-            <h2 class="section-title">Our Five-Step Flow System for SaaS & B2B</h2>
-            <p class="section-description">A proven framework to drive operational excellence and sustainable growth.</p>
-        </div>
-
-        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px;">
-            <div style="text-align: center; padding: 32px 20px; background: white; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);">
-                <div style="width: 60px; height: 60px; border-radius: 50%; background: #3b82f6; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">01</div>
-                <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #0a0a0a;">Discover</h4>
-                <p style="font-size: 14px; color: #6a6a6a; line-height: 1.6;">Audit your current tools, map go-to-market and customer success workflows.</p>
-            </div>
-            
-            <div style="text-align: center; padding: 32px 20px; background: white; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);">
-                <div style="width: 60px; height: 60px; border-radius: 50%; background: #3b82f6; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">02</div>
-                <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #0a0a0a;">Innovate</h4>
-                <p style="font-size: 14px; color: #6a6a6a; line-height: 1.6;">Design your optimal RevOps Flow to drive operational excellence.</p>
-            </div>
-            
-            <div style="text-align: center; padding: 32px 20px; background: white; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);">
-                <div style="width: 60px; height: 60px; border-radius: 50%; background: #3b82f6; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">03</div>
-                <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #0a0a0a;">Build</h4>
-                <p style="font-size: 14px; color: #6a6a6a; line-height: 1.6;">Implement CRM, subscription billing, and automation.</p>
-            </div>
-            
-            <div style="text-align: center; padding: 32px 20px; background: white; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);">
-                <div style="width: 60px; height: 60px; border-radius: 50%; background: #3b82f6; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">04</div>
-                <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #0a0a0a;">Adopt</h4>
-                <p style="font-size: 14px; color: #6a6a6a; line-height: 1.6;">Optimise team productivity and reduce ramp time using the new systems.</p>
-            </div>
-            
-            <div style="text-align: center; padding: 32px 20px; background: white; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06);">
-                <div style="width: 60px; height: 60px; border-radius: 50%; background: #3b82f6; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; margin: 0 auto 16px;">05</div>
-                <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 12px; color: #0a0a0a;">Grow</h4>
-                <p style="font-size: 14px; color: #6a6a6a; line-height: 1.6;">Optimise performance, automate manual work, and scale.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Recommended Packages Section -->
     <section class="section section-light">
         <div class="section-header">
@@ -824,4 +846,45 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 RODA Consulting. Reve
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RODA Consulting</h3>
+                <p>Revenue Operations & Data Analytics consulting for Series A and B SaaS companies. Transform data into revenue with clean systems, optimized processes, and actionable intelligence.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="revenue-operations.html">Revenue Operations</a></li>
+                    <li><a href="data-analytics.html">Data Analytics</a></li>
+                    <li><a href="marketing-operations.html">Marketing Operations</a></li>
+                    <li><a href="index.html#packages">Packages</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#expertise">Expertise</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:hello@rodaconsulting.com">hello@rodaconsulting.com</a></li>
+                    <li>Madrid, Spain</li>
+                    <li>Serving Global Clients</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 RODA Consulting. Revenue Operations & Data Analytics Consulting.</p>
+        </div>
+    </footer>
+</body>
+</html>
