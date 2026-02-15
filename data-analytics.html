@@ -397,7 +397,9 @@
         
         /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, #0a1628 0%, #0f1a2e 50%, #05101f 100%);
+            background: linear-gradient(-45deg, #0a1628, #2563eb, #1e40af, #0f172a);
+            background-size: 400% 400%;
+            animation: ctaGradient 10s ease infinite;
             color: white;
             padding: 100px 40px;
             text-align: center;
@@ -405,16 +407,10 @@
             overflow: hidden;
         }
         
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(96, 165, 250, 0.06) 0%, transparent 50%);
+        @keyframes ctaGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         .cta-content {
@@ -789,7 +785,7 @@
         <div class="cta-content">
             <h2>Ready to Unlock Your Data?</h2>
             <p>Book a free 45-minute consultation to discuss your data analytics challenges and explore how we can help.</p>
-            <a href="https://calendar.app.google/znVnDQwPVqeByTKFA" target="_blank" rel="noopener noreferrer">Schedule Discovery Call</a>
+            <a href="https://calendar.app.google/znVnDQwPVqeByTKFA" target="_blank" rel="noopener noreferrer" class="cta-button">Schedule Discovery Call</a>
         </div>
     </section>
 

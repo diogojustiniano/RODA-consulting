@@ -302,10 +302,18 @@
         }
         
         .section-dark {
-            background: linear-gradient(135deg, #0a1628 0%, #0f1a2e 50%, #05101f 100%);
+            background: linear-gradient(-45deg, #0a1628, #2563eb, #1e40af, #0f172a);
+            background-size: 400% 400%;
+            animation: ctaGradient 10s ease infinite;
             color: white;
             position: relative;
             overflow: hidden;
+        }
+        
+        @keyframes ctaGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         
         .section-dark::before {
@@ -1051,7 +1059,7 @@
         <div class="cta-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
             <h2 style="font-size: 42px; font-weight: 800; margin-bottom: 24px; color: white;">Ready to Transform Your Revenue Operations?</h2>
             <p style="font-size: 18px; margin-bottom: 32px; color: rgba(255, 255, 255, 0.9);">Book a free 45-minute consultation to discuss your challenges and explore how we can help you scale efficiently.</p>
-            <a href="https://calendar.app.google/znVnDQwPVqeByTKFA" target="_blank" rel="noopener noreferrer">Schedule Discovery Call</a>
+            <a href="https://calendar.app.google/znVnDQwPVqeByTKFA" target="_blank" rel="noopener noreferrer" class="cta-button">Schedule Discovery Call</a>
         </div>
     </section>
 
