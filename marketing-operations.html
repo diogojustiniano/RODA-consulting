@@ -330,10 +330,24 @@
         }
         
         .price {
-            font-size: 36px;
+            margin-bottom: 4px;
+        }
+        
+        .price-label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        
+        .price-amount {
+            font-size: 38px;
             font-weight: 800;
             color: #3b82f6;
-            margin-bottom: 4px;
+            letter-spacing: -1px;
         }
         
         .price-note {
@@ -688,6 +702,23 @@
                 font-size: 32px;
             }
         }
+
+        .package-price {
+            font-size: 11px;
+            font-weight: 600;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        
+        .package-price-value {
+            font-size: 42px;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
     </style>
 </head>
 <body>
@@ -772,7 +803,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$6K-$10K</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$6,000</span></div>
                         <div class="price-note">Varies by complexity</div>
                     </div>
                     <div class="timeline">
@@ -784,7 +815,7 @@
                     <h5>Optional Marketing Ops Administration</h5>
                     <p>Ongoing campaign operations, reporting, and system management (30 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$3,500/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $3,500<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
                     </div>
                 </div>
@@ -809,7 +840,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$5.5K-$8K</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$5,500</span></div>
                         <div class="price-note">Varies by complexity</div>
                     </div>
                     <div class="timeline">
@@ -821,7 +852,7 @@
                     <h5>Optional Competitive Intelligence</h5>
                     <p>Ongoing competitive intelligence and ICP refinement (15 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$2,000/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $2,000<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">6-month minimum</div>
                     </div>
                 </div>
@@ -839,10 +870,10 @@
         <div class="packages-grid">
             <!-- Package 1: Lead Gen & Enrichment -->
             <div class="package-card">
-                <span class="package-badge">Save $600</span>
+                <span class="package-badge">Best Value</span>
                 <div class="package-name">Lead Gen & Enrichment</div>
-                <div class="package-price">$3,000</div>
-                <div class="package-savings">Regular price: $3,600</div>
+                <div class="package-price">Starting from</div>
+                <div class="package-price-value">$3,000</div>
                 <ul class="package-includes">
                     <li>Data enrichment platform setup</li>
                     <li>Meeting scheduling automation</li>
@@ -855,10 +886,10 @@
 
             <!-- Package 2: Start Up Package -->
             <div class="package-card">
-                <span class="package-badge">Save $3,000</span>
+                <span class="package-badge">Best Value</span>
                 <div class="package-name">Start Up Package</div>
-                <div class="package-price">$15,000</div>
-                <div class="package-savings">Regular price: $18,000</div>
+                <div class="package-price">Starting from</div>
+                <div class="package-price-value">$15,000</div>
                 <ul class="package-includes">
                     <li>Complete system implementation from scratch</li>
                     <li>CRM setup & configuration</li>

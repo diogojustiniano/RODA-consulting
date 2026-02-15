@@ -328,10 +328,24 @@
         }
         
         .price {
-            font-size: 36px;
+            margin-bottom: 4px;
+        }
+        
+        .price-label {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        
+        .price-amount {
+            font-size: 38px;
             font-weight: 800;
             color: #3b82f6;
-            margin-bottom: 4px;
+            letter-spacing: -1px;
         }
         
         .price-note {
@@ -594,6 +608,23 @@
                 font-size: 32px;
             }
         }
+
+        .package-price {
+            font-size: 11px;
+            font-weight: 600;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        
+        .package-price-value {
+            font-size: 42px;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-bottom: 8px;
+            letter-spacing: -1px;
+        }
     </style>
 </head>
 <body>
@@ -680,7 +711,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$5K-$8.5K</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$5,000</span></div>
                         <div class="price-note">Varies by complexity</div>
                     </div>
                     <div class="timeline">
@@ -692,7 +723,7 @@
                     <h5>Optional CRM Administration</h5>
                     <p>Ongoing CRM management: updates, data hygiene, user support, optimization (25 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$3,000/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $3,000<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
                     </div>
                 </div>
@@ -716,7 +747,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$6,500</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$6,500</span></div>
                         <div class="price-note">One-time project</div>
                     </div>
                     <div class="timeline">
@@ -728,7 +759,7 @@
                     <h5>Optional RevOps Support</h5>
                     <p>Ongoing RevOps management: pipeline reviews, process optimization, reporting (30 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$4,000/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $4,000<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">6-month minimum</div>
                     </div>
                 </div>
@@ -758,7 +789,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$1.5K-$3.5K</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$1,500</span></div>
                         <div class="price-note">Per tool</div>
                     </div>
                     <div class="timeline">
@@ -770,7 +801,7 @@
                     <h5>Optional Tools Administration</h5>
                     <p>Ongoing tool management, optimization, and user support (20 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$2,500/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $2,500<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
                     </div>
                 </div>
@@ -794,7 +825,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$4.5K-$7K</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$4,500</span></div>
                         <div class="price-note">Varies by complexity</div>
                     </div>
                     <div class="timeline">
@@ -806,7 +837,7 @@
                     <h5>Optional Automation Expansion</h5>
                     <p>Continuous automation optimization and new workflow development (20 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price">$2,500/mo</div>
+                        <div class="retainer-price"><span class="price-label">From</span> $2,500<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
                     </div>
                 </div>
@@ -830,7 +861,7 @@
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price">$4K-$6K/mo</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$4,000<span style="font-size:16px;font-weight:500">/mo</span></span></div>
                         <div class="price-note">Recurring monthly service</div>
                     </div>
                     <div class="timeline">
@@ -935,10 +966,11 @@
         <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
             <!-- Package 1: Sales Engagement Stack -->
             <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
-                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Save $1,000</span>
+                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
                 <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Sales Engagement Stack</div>
-                <div style="font-size: 36px; font-weight: 800; color: #3b82f6; margin-bottom: 8px;">$6,500</div>
-                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;">Regular price: $7,500</div>
+                <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$6,500</div>
+                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
                 <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Sales engagement platform setup</li>
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Conversation intelligence integration</li>
@@ -951,10 +983,11 @@
 
             <!-- Package 2: Full Revenue Stack -->
             <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
-                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Save $2,500</span>
+                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
                 <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Full Revenue Stack</div>
-                <div style="font-size: 36px; font-weight: 800; color: #3b82f6; margin-bottom: 8px;">$12,000</div>
-                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;">Regular price: $14,500</div>
+                <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$12,000</div>
+                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
                 <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Complete tech stack implementation</li>
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Sales engagement & conversation intelligence</li>
@@ -967,10 +1000,11 @@
 
             <!-- Package 3: Start Up Package -->
             <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
-                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Save $3,000</span>
+                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
                 <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Start Up Package</div>
-                <div style="font-size: 36px; font-weight: 800; color: #3b82f6; margin-bottom: 8px;">$15,000</div>
-                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;">Regular price: $18,000</div>
+                <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$15,000</div>
+                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
                 <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Complete system implementation from scratch</li>
                     <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>CRM setup & configuration</li>
