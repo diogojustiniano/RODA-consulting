@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Data Analytics consulting services: analytics audits, custom dashboards, and SQL database optimization for Series A and B SaaS companies.">
-    <title>Data Analytics Services | RODA Consulting</title>
+    <meta name="description" content="Revenue Operations consulting services: CRM optimization, RevOps foundations, sales automation, and tool implementation for Series A and B SaaS companies.">
+    <title>AI Agents & Intelligent Automation | RODA Consulting</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
@@ -200,6 +200,10 @@
             contain: layout style paint;
         }
         
+        .section-light {
+            background: #fafafa;
+        }
+        
         .section-white {
             background: white;
         }
@@ -293,13 +297,14 @@
         .deliverables ul {
             list-style: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
         }
         
         .deliverables li {
             font-size: 14px;
             color: #4a4a4a;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
         }
@@ -309,10 +314,6 @@
             margin-right: 8px;
             color: #3b82f6;
             font-weight: 700;
-        }
-        
-        .deliverables li:last-child {
-            border-bottom: none;
         }
         
         .service-footer {
@@ -555,7 +556,7 @@
         /* Responsive */
         @media (max-width: 1024px) {
             .services-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
             
             .dropdown {
@@ -685,7 +686,7 @@
                 font-size: 32px;
             }
             
-            .services-grid {
+            .deliverables ul {
                 grid-template-columns: 1fr;
             }
             
@@ -782,48 +783,84 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Data Analytics Services</h1>
-            <p>Transform raw data into actionable insights. Analytics audits, custom dashboards, and database optimization to drive data-informed decisions.</p>
+            <h1>AI Agents & Intelligent Automation</h1>
+            <p>Build autonomous AI agents that qualify leads, monitor pipelines, and extract insights from your data—so your team can focus on strategy and growth.</p>
         </div>
     </section>
 
     <!-- Services Section -->
     <section class="section section-white">
         <div class="section-header">
-            <h2 class="section-title">Data Analytics Services</h2>
-            <p class="section-description">Expert analytics consulting for Series A and B companies looking to unlock the power of their data.</p>
+            <h2 class="section-title">AI Agents & Intelligent Automation Services</h2>
+            <p class="section-description">Automate your revenue operations with intelligent AI agents that integrate directly into your existing systems.</p>
         </div>
         
         <div class="services-grid">
-            <!-- Service 1: Data Analytics Audit -->
-            <div class="service-card" id="analytics-audit">
-                <span class="service-tag">Foundation</span>
-                <h4>Data Analytics Audit</h4>
-                <p class="service-description">Comprehensive assessment of your data infrastructure, quality, and reporting capabilities. Get a clear roadmap to improve analytics maturity.</p>
+            <!-- Service 1: AI SDR Agent -->
+            <div class="service-card" id="ai-sdr-agent">
+                <span class="service-tag">High Impact</span>
+                <h4>AI SDR Agent</h4>
+                <p class="service-description">Automatically qualifies inbound leads, sends personalized outreach sequences, updates your CRM, and books meetings while your sales team focuses on closing deals.</p>
                 <div class="deliverables">
                     <h5>Key Deliverables</h5>
                     <ul>
-                        <li>Current state assessment</li>
-                        <li>Data quality analysis</li>
-                        <li>Gap identification</li>
-                        <li>6-month roadmap</li>
-                        <li>Dashboard mockups</li>
-                        <li>Executive presentation</li>
+                        <li>Lead qualification workflow based on ICP</li>
+                        <li>AI-powered email sequences</li>
+                        <li>Automated CRM updates</li>
+                        <li>Meeting booking automation</li>
+                        <li>High-priority lead alerts</li>
+                        <li>Team training & optimization</li>
                     </ul>
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$3,500</span></div>
-                        <div class="price-note">One-time project</div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$10,000</span></div>
+                        <div class="price-note">Varies by complexity</div>
                     </div>
                     <div class="timeline">
                         <div class="timeline-label">Timeline</div>
-                        <div class="timeline-value">2 weeks</div>
+                        <div class="timeline-value">3-4 weeks</div>
                     </div>
                 </div>
                 <div class="retainer-option">
-                    <h5>Optional Monthly Support</h5>
-                    <p>Ongoing analytics support: reporting, dashboard maintenance, ad-hoc analysis (20 hours/month)</p>
+                    <h5>Optional Ongoing Optimization</h5>
+                    <p>Continuous AI model refinement, new sequence creation, performance monitoring (20 hours/month)</p>
+                    <div class="retainer-pricing">
+                        <div class="retainer-price"><span class="price-label">From</span> $3,000<span style="font-size:13px">/mo</span></div>
+                        <div class="retainer-commitment">3-month minimum</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Revenue Intelligence Agent -->
+            <div class="service-card" id="revenue-intelligence-agent">
+                <span class="service-tag">Strategic</span>
+                <h4>Revenue Intelligence Agent</h4>
+                <p class="service-description">Monitors your pipeline 24/7, predicts deal risks, identifies expansion opportunities, and sends intelligent alerts so nothing slips through the cracks.</p>
+                <div class="deliverables">
+                    <h5>Key Deliverables</h5>
+                    <ul>
+                        <li>AI pipeline health monitoring</li>
+                        <li>Churn risk prediction (30-60 days early)</li>
+                        <li>Expansion opportunity detection</li>
+                        <li>Daily/weekly executive summaries</li>
+                        <li>Automated forecasting reports</li>
+                        <li>CRM & data integration</li>
+                    </ul>
+                </div>
+                <div class="service-footer">
+                    <div class="price-section">
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$10,000</span></div>
+                        <div class="price-note">Varies by data complexity</div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-label">Timeline</div>
+                        <div class="timeline-value">3-4 weeks</div>
+                    </div>
+                </div>
+                <div class="retainer-option">
+                    <h5>Optional Ongoing Monitoring</h5>
+                    <p>Model refinement, new insights development, performance tracking (15 hours/month)</p>
                     <div class="retainer-pricing">
                         <div class="retainer-price"><span class="price-label">From</span> $2,500<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
@@ -831,25 +868,61 @@
                 </div>
             </div>
 
-            <!-- Service 2: Custom Dashboard Development -->
-            <div class="service-card" id="dashboard-development">
-                <span class="service-tag">Implementation</span>
-                <h4>Custom Dashboard Development</h4>
-                <p class="service-description">Beautiful, interactive Power BI or Tableau dashboards that turn data into decisions. Automated refresh, mobile-ready.</p>
+            <!-- Service 3: HubSpot AI Optimization -->
+            <div class="service-card" id="hubspot-ai-optimization">
+                <span class="service-tag">Efficiency</span>
+                <h4>HubSpot AI Optimization</h4>
+                <p class="service-description">Transforms your existing HubSpot into an intelligent revenue engine with AI-powered lead scoring, predictive insights, and automated personalization.</p>
                 <div class="deliverables">
                     <h5>Key Deliverables</h5>
                     <ul>
-                        <li>5 pages/views</li>
-                        <li>15-20 key metrics</li>
-                        <li>2-3 data sources</li>
-                        <li>Automated refresh</li>
-                        <li>Mobile optimization</li>
-                        <li>Training & documentation</li>
+                        <li>AI-powered lead scoring model</li>
+                        <li>Predictive deal likelihood scores</li>
+                        <li>Automated email personalization</li>
+                        <li>Smart content recommendations</li>
+                        <li>Custom AI insights dashboard</li>
+                        <li>Team training on AI features</li>
                     </ul>
                 </div>
                 <div class="service-footer">
                     <div class="price-section">
-                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$3,000</span></div>
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$6,000</span></div>
+                        <div class="price-note">Varies by scope</div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-label">Timeline</div>
+                        <div class="timeline-value">2-3 weeks</div>
+                    </div>
+                </div>
+                <div class="retainer-option">
+                    <h5>Optional Ongoing Optimization</h5>
+                    <p>Continuous AI model tuning, new feature implementation, performance tracking (15 hours/month)</p>
+                    <div class="retainer-pricing">
+                        <div class="retainer-price"><span class="price-label">From</span> $2,000<span style="font-size:13px">/mo</span></div>
+                        <div class="retainer-commitment">3-month minimum</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Marketing Intelligence Agent -->
+            <div class="service-card" id="marketing-intelligence-agent">
+                <span class="service-tag">Data-Driven</span>
+                <h4>Marketing Intelligence Agent</h4>
+                <p class="service-description">Automates campaign performance analysis, generates content recommendations, and provides actionable insights so your marketing team focuses on strategy instead of spreadsheets.</p>
+                <div class="deliverables">
+                    <h5>Key Deliverables</h5>
+                    <ul>
+                        <li>Automated campaign reports</li>
+                        <li>AI content recommendations</li>
+                        <li>Ad spend optimization suggestions</li>
+                        <li>CAC and LTV trend monitoring</li>
+                        <li>Attribution modeling insights</li>
+                        <li>Anomaly alerts (spikes, drops)</li>
+                    </ul>
+                </div>
+                <div class="service-footer">
+                    <div class="price-section">
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$7,000</span></div>
                         <div class="price-note">Varies by data sources</div>
                     </div>
                     <div class="timeline">
@@ -858,69 +931,124 @@
                     </div>
                 </div>
                 <div class="retainer-option">
-                    <h5>Optional Dashboard Maintenance</h5>
-                    <p>Keep dashboards current: updates, new metrics, optimization, monitoring (10 hours/month)</p>
+                    <h5>Optional Ongoing Insights</h5>
+                    <p>Continuous insights generation, new metrics tracking, optimization recommendations (15 hours/month)</p>
                     <div class="retainer-pricing">
-                        <div class="retainer-price"><span class="price-label">From</span> $1,500<span style="font-size:13px">/mo</span></div>
+                        <div class="retainer-price"><span class="price-label">From</span> $2,500<span style="font-size:13px">/mo</span></div>
                         <div class="retainer-commitment">3-month minimum</div>
                     </div>
                 </div>
             </div>
 
+            <!-- Service 5: Meeting Intelligence Automation -->
+            <div class="service-card" id="meeting-intelligence-automation">
+                <span class="service-tag">Productivity</span>
+                <h4>Meeting Intelligence Automation</h4>
+                <p class="service-description">Records, transcribes, and extracts insights from sales calls automatically—updating your CRM, creating follow-up tasks, and flagging deal risks.</p>
+                <div class="deliverables">
+                    <h5>Key Deliverables</h5>
+                    <ul>
+                        <li>Call recording & transcription setup</li>
+                        <li>AI extraction (topics, objections, next steps)</li>
+                        <li>Automated CRM field updates</li>
+                        <li>Follow-up task creation</li>
+                        <li>Deal risk sentiment flagging</li>
+                        <li>Weekly insights reports</li>
+                    </ul>
+                </div>
+                <div class="service-footer">
+                    <div class="price-section">
+                        <div class="price"><span class="price-label">Starting from</span><span class="price-amount">$5,000</span></div>
+                        <div class="price-note">Varies by integrations</div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-label">Timeline</div>
+                        <div class="timeline-value">2 weeks</div>
+                    </div>
+                </div>
+                <div class="retainer-option">
+                    <h5>Optional Ongoing Monitoring</h5>
+                    <p>Model refinement, new extraction patterns, insights optimization (10 hours/month)</p>
+                    <div class="retainer-pricing">
+                        <div class="retainer-price"><span class="price-label">From</span> $2,000<span style="font-size:13px">/mo</span></div>
+                        <div class="retainer-commitment">3-month minimum</div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+            <div style="background: white; padding: 32px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); grid-column: 1 / -1;">
+                <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #3b82f6;">All Departments</h4>
+                <p style="font-size: 15px; color: #6a6a6a; line-height: 1.7;">CRM and RevTech system administration.</p>
+            </div>
         </div>
     </section>
 
     <!-- Recommended Packages Section -->
     <section class="section section-light">
         <div class="section-header">
-            <h2 class="section-title">Recommended Packages</h2>
-            <p class="section-description">Complete solutions that combine multiple services for maximum impact.</p>
+            <h2 class="section-title">AI Agent Packages</h2>
+            <p class="section-description">Combine multiple AI agents for maximum impact and better value.</p>
         </div>
 
-        <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
-            <!-- Package 1: Scale Up Package -->
+        <div style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                        <!-- Package 1: AI Sales Stack -->
             <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
                 <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
-                <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Scale Up Package</div>
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">AI Sales Stack</div>
                 <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
-                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$10,000</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$18,000</div>
                 <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
                 <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Comprehensive systems audit</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Process optimization & improvement</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Data cleanup & quality enhancement</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Automation workflow refinement</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Advanced reporting & dashboards</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Team enablement & best practices</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>AI SDR Agent</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Meeting Intelligence Automation</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>HubSpot AI Optimization</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Complete AI automation for sales team</li>
                 </ul>
                 <div style="font-size: 14px; color: #6a6a6a; margin-top: 16px;">Timeline: 6-8 weeks</div>
             </div>
 
-            <!-- Package 2: Start Up Package -->
+            <!-- Package 2: Complete Revenue Intelligence Suite -->
             <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
                 <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
-                <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Start Up Package</div>
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Complete Revenue Intelligence Suite</div>
                 <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
-                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$15,000</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$25,000</div>
                 <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
                 <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Complete system implementation from scratch</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>CRM setup & configuration</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Marketing automation platform</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Initial dashboards & reporting</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Process & workflow design</li>
-                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Team training & documentation</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>AI SDR Agent</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Revenue Intelligence Agent</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>HubSpot AI Optimization</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Meeting Intelligence Automation</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>End-to-end AI automation</li>
                 </ul>
-                <div style="font-size: 14px; color: #6a6a6a; margin-top: 16px;">Timeline: 8-12 weeks</div>
+                <div style="font-size: 14px; color: #6a6a6a; margin-top: 16px;">Timeline: 8-10 weeks</div>
             </div>
+
+            <!-- Package 3: Marketing AI Accelerator -->
+            <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;">
+                <span style="display: inline-block; padding: 6px 12px; background: #3b82f6; color: white; border-radius: 4px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Best Value</span>
+                <div style="font-size: 24px; font-weight: 700; margin-bottom: 16px; color: #0a0a0a;">Marketing AI Accelerator</div>
+                <div style="font-size: 13px; font-weight: 600; color: #6a6a6a; margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.5px;">Starting from</div>
+                <div style="font-size: 38px; font-weight: 800; color: #3b82f6; margin-bottom: 8px; letter-spacing: -1px;">$11,000</div>
+                <div style="font-size: 13px; color: #9a9a9a; margin-bottom: 24px;"></div>
+                <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Marketing Intelligence Agent</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>HubSpot AI Optimization (Marketing focus)</li>
+                    <li style="font-size: 14px; color: #4a4a4a; padding: 8px 0; display: flex; align-items: center;"><span style="margin-right: 8px; color: #3b82f6; font-weight: 700;">→</span>Intelligent automation for marketing ops</li>
+                </ul>
+                <div style="font-size: 14px; color: #6a6a6a; margin-top: 16px;">Timeline: 4-5 weeks</div>
+            </div>
+
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="cta-content">
-            <h2>Ready to Unlock Your Data?</h2>
-            <p>Book a free 45-minute consultation to discuss your data analytics challenges and explore how we can help.</p>
+            <h2>Ready to Build Your AI Agents?</h2>
+            <p>Book a free 45-minute consultation to discuss which AI agents would transform your revenue operations.</p>
             <a href="https://calendar.app.google/znVnDQwPVqeByTKFA" target="_blank" rel="noopener noreferrer" class="cta-button">Schedule Discovery Call</a>
         </div>
     </section>
