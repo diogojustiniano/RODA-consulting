@@ -100,6 +100,34 @@
             visibility: visible;
         }
         
+        /* Simplified Services Dropdown - 2x2 Grid */
+        .services-simple-dropdown {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 0 !important;
+            min-width: 500px !important;
+            padding: 16px !important;
+        }
+        
+        .services-simple-dropdown .dropdown-header {
+            margin: 8px;
+            padding: 16px;
+            background: rgba(59, 130, 246, 0.08);
+            border-left: 3px solid #3b82f6;
+            border-radius: 6px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+        }
+        
+        .services-simple-dropdown .dropdown-header:hover {
+            background: rgba(59, 130, 246, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+        
         .dropdown-section {
             padding: 0 24px;
             border-right: 1px solid rgba(0, 0, 0, 0.06);
@@ -1016,33 +1044,11 @@
                 <li><a href="index.html#expertise">Expertise</a></li>
                 <li class="nav-item">
                     <a href="index.html#services">Services</a>
-                    <div class="dropdown">
-                        <div class="dropdown-section">
-                            <a href="revenue-operations.html" class="dropdown-header">Revenue Operations</a>
-                            <a href="revenue-operations.html#crm-optimization" class="dropdown-item">CRM Optimization</a>
-                            <a href="revenue-operations.html#revops-foundation" class="dropdown-item">RevOps Foundation Setup</a>
-                            <a href="revenue-operations.html#tool-implementation" class="dropdown-item">Sales & RevOps Tool Implementation</a>
-                            <a href="revenue-operations.html#sales-automation" class="dropdown-item">Sales Process Automation</a>
-                            <a href="revenue-operations.html#revops-managed" class="dropdown-item">RevOps Managed Services</a>
-                        </div>
-                        <div class="dropdown-section">
-                            <a href="data-analytics.html" class="dropdown-header">Data Analytics</a>
-                            <a href="data-analytics.html#analytics-audit" class="dropdown-item">Data Analytics Audit</a>
-                            <a href="data-analytics.html#dashboard-development" class="dropdown-item">Custom Dashboard Development</a>
-                            </div>
-                        <div class="dropdown-section">
-                            <a href="marketing-operations.html" class="dropdown-header">Marketing Operations</a>
-                            <a href="marketing-operations.html#marketing-ops-setup" class="dropdown-item">Marketing Operations Setup</a>
-                            <a href="marketing-operations.html#market-analysis" class="dropdown-item">Go-to-Market Strategy and Analysis</a>
-                        </div>
-                        <div class="dropdown-section">
-                            <a href="ai-agents.html" class="dropdown-header">AI Agents & Automation</a>
-                            <a href="ai-agents.html#ai-sdr-agent" class="dropdown-item">AI SDR Agent</a>
-                            <a href="ai-agents.html#revenue-intelligence-agent" class="dropdown-item">Revenue Intelligence Agent</a>
-                            <a href="ai-agents.html#hubspot-ai-optimization" class="dropdown-item">HubSpot AI Optimization</a>
-                            <a href="ai-agents.html#marketing-intelligence-agent" class="dropdown-item">Marketing Intelligence Agent</a>
-                            <a href="ai-agents.html#meeting-intelligence-automation" class="dropdown-item">Meeting Intelligence Automation</a>
-                        </div>
+                    <div class="dropdown services-simple-dropdown">
+                        <a href="revenue-operations.html" class="dropdown-header">Revenue Operations</a>
+                        <a href="ai-agents.html" class="dropdown-header">AI Agents & Automation</a>
+                        <a href="marketing-operations.html" class="dropdown-header">Marketing Operations</a>
+                        <a href="data-analytics.html" class="dropdown-header">Data Analytics</a>
                     </div>
                 </li>
                 <li class="nav-item">
