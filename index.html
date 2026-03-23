@@ -249,6 +249,10 @@
             line-height: 1.1;
         }
         
+        .hero h1 .mobile-only-break {
+            display: none;
+        }
+        
         .hero p {
             font-size: 20px;
             margin-bottom: 24px;
@@ -499,7 +503,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 32px;
         }
         
@@ -973,6 +977,10 @@
                 font-size: 42px;
             }
             
+            .hero h1 .mobile-only-break {
+                display: block;
+            }
+            
             .hero p {
                 font-size: 16px;
             }
@@ -1069,7 +1077,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Transform <span id="rotating-word">Data</span> Into Revenue</h1>
+            <h1>Transform <span id="rotating-word">Data</span> Into<br class="mobile-only-break"> Revenue</h1>
             <p>Expert revenue operations and data analytics consulting for Series A and Series B companies.</p>
             <p>Build the foundation to scale from $2M to $50M ARR with clean data, optimized processes, and revenue intelligence.</p>
             <div class="cta-buttons">
@@ -1258,10 +1266,10 @@
             </div>
 
             <div class="service-area-card">
-                <span class="expertise-icon">📊</span>
-                <h3>Data Analytics</h3>
-                <p>Analytics audits, custom dashboards, and SQL database optimization.</p>
-                <a href="data-analytics.html" class="service-area-link">Explore Services →</a>
+                <span class="expertise-icon">🤖</span>
+                <h3>AI Agents & Automation</h3>
+                <p>AI agents that qualify leads, monitor revenue, and automate meeting notes without adding another tool.</p>
+                <a href="ai-agents.html" class="service-area-link">Explore Services →</a>
             </div>
 
             <div class="service-area-card">
@@ -1272,10 +1280,10 @@
             </div>
 
             <div class="service-area-card">
-                <span class="expertise-icon">🤖</span>
-                <h3>AI Agents & Automation</h3>
-                <p>AI agents that qualify leads, monitor revenue, and automate meeting notes without adding another tool.</p>
-                <a href="ai-agents.html" class="service-area-link">Explore Services →</a>
+                <span class="expertise-icon">📊</span>
+                <h3>Data Analytics</h3>
+                <p>Analytics audits, custom dashboards, and SQL database optimization.</p>
+                <a href="data-analytics.html" class="service-area-link">Explore Services →</a>
             </div>
         </div>
     </section>
